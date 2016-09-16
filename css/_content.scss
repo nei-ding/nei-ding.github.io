@@ -1,0 +1,78 @@
+main {
+  font-family:      Arimo, sans-serif;
+  color:            rgb(185, 146, 92);
+  font-size:        30px;
+
+  padding:          100px;
+  background-color: #fff;
+}
+
+.illustration {
+  $size: 500px;
+  background:      rgb(185, 146, 92) no-repeat center;
+  border-radius:   $size;
+
+  background-size: 300px;
+
+  width:           $size;
+  height:          $size;
+
+  @media (max-width: 1224px) {
+    width:  300px;
+    height: 300px;
+
+    background-size: 220px;
+  }
+}
+
+article {
+  clear:           both;
+  display:         flex;
+  align-items:     center;
+  justify-content: flex-start;
+  flex-direction:  row;
+
+  @media (max-width: 1000px) {
+    display: block;
+  }
+}
+
+.text {
+  flex: 1;
+
+  .left & {
+    padding-left: 100px;
+  }
+
+  .right & {
+    padding-right: 100px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 20px;
+    margin: 0;
+    padding: 0 !important;
+  }
+}
+
+article + article {
+  margin-top: 100px;
+}
+
+#mortarboard {
+  background-image: url("../img/mortarboard.svg");
+  background-size:  360px;
+}
+
+#instructor {
+  background-image: url("../img/instructor.svg");
+}
+
+#jewelry {
+  background-image: url("../img/jewelry.svg");
+}
+
+#upcycling {
+  background-image: url("../img/upcycling.svg");
+  background-size:  500px;
+}

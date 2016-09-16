@@ -121,4 +121,62 @@ header {
     #logo {
       margin-bottom: 20px; } }
 
+main {
+  font-family: Arimo, sans-serif;
+  color: #b9925c;
+  font-size: 30px;
+  padding: 100px;
+  background-color: #fff; }
+
+.illustration {
+  background: #b9925c no-repeat center;
+  border-radius: 500px;
+  background-size: 300px;
+  width: 500px;
+  height: 500px; }
+  @media (max-width: 1224px) {
+    .illustration {
+      width: 300px;
+      height: 300px;
+      background-size: 220px; } }
+
+article {
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row; }
+  @media (max-width: 1000px) {
+    article {
+      display: block; } }
+
+.text {
+  flex: 1; }
+  .left .text {
+    padding-left: 100px; }
+  .right .text {
+    padding-right: 100px; }
+  @media (max-width: 500px) {
+    .text {
+      font-size: 20px;
+      margin: 0;
+      padding: 0 !important; } }
+
+article + article {
+  margin-top: 100px; }
+
+#mortarboard {
+  background-image: url("../img/mortarboard.svg");
+  background-size: 360px; }
+
+#instructor {
+  background-image: url("../img/instructor.svg"); }
+
+#jewelry {
+  background-image: url("../img/jewelry.svg"); }
+
+#upcycling {
+  background-image: url("../img/upcycling.svg");
+  background-size: 500px; }
+
 /*# sourceMappingURL=main.css.map */
