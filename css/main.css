@@ -47,7 +47,8 @@ table {
   border-spacing: 0; }
 
 html, body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow-x: hidden; }
 
 header {
   background: url(../img/background.jpg) no-repeat;
